@@ -1,0 +1,12 @@
+import React from 'react';
+
+const Tutorial = () => {
+  return (
+    <div className="tutorial">
+      <h1>Tutorial</h1>
+      <p>Coming Soon!</p>
+    </div>
+  );
+};
+
+export default Tutorial;

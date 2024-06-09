@@ -1,149 +1,44 @@
-/* General styles */
 body {
-  font-family: 'Orbitron', sans-serif;
-  background-color: #1a1a1a;
-  color: #d4d4d4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Navigation styles */
-nav {
-  background-color: #20232a;
-  padding: 10px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #61dafb;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Page section styles */
-section {
-  padding: 20px;
-}
-
-h1, h2 {
-  color: #61dafb;
-}
-
-button {
-  background-color: #282c34;
-  color: #61dafb;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #20232a;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  padding: 5px 0;
-}
-
-/* Custom styles for each component */
-.defence-phase, .deposit-funds, .evaluation-phase, .history, .home, .leaderboard, .preparation-phase, .resource-management, .game {
-  background-color: #282c34;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 20px auto;
-  max-width: 800px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.defence-phase img, .evaluation-phase img {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #61dafb;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.stats {
+.navbar {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  background-color: #1a1a1a;
+  padding: 1rem;
 }
 
-.stats p {
-  flex: 1 1 200px;
-  margin: 10px;
-  background-color: #20232a;
-  padding: 10px;
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.home-buttons button {
+  margin: 0.5rem;
+}
+
+.preparation-phase, .evaluation-phase, .defence-phase, .sign-in, .deposit-funds, .home, .current-phase {
+  background-color: #1a1a1a;
+  padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  .stats {
-    flex-direction: column;
-  }
+.preparation-phase .hotbar button, .role-details input {
+  margin: 0.5rem;
 }

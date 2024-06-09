@@ -1,22 +1,23 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function Navigation() {
+const Navigation = () => {
   return (
-    <nav>
+    <nav className="navigation">
       <ul>
-        <li><NavLink to="/" exact>Home</NavLink></li>
-        <li><NavLink to="/defence">Defence Phase</NavLink></li>
-        <li><NavLink to="/deposit-funds">Deposit Funds</NavLink></li>
-        <li><NavLink to="/evaluation">Evaluation Phase</NavLink></li>
-        <li><NavLink to="/history">History</NavLink></li>
-        <li><NavLink to="/leaderboard">Leaderboard</NavLink></li>
-        <li><NavLink to="/preparation">Preparation Phase</NavLink></li>
-        <li><NavLink to="/resource-management">Resource Management</NavLink></li>
-        <li><NavLink to="/game">Game</NavLink></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/current-phase">Current Phase</Link></li>
+        <li><Link to="/deposit-funds">Deposit Funds</Link></li>
+        <li><Link to="/history">History</Link></li>
+        <li><Link to="/leaderboard">Leaderboard</Link></li>
+        <li><Link to="/tutorial">Tutorial</Link></li>
+        <li><Link to="/preparation-phase">Preparation Phase</Link></li>
+        <li><Link to="/defence-phase">Defence Phase</Link></li>
+        <li><Link to="/evaluation-phase">Evaluation Phase</Link></li>
+        <li><Link to="/sign-in">Sign In</Link></li>
       </ul>
     </nav>
   );
-}
+};
 
 export default Navigation;

@@ -1,13 +1,13 @@
+// src/components/DepositFunds.js
+
 import React from 'react';
 
-function DepositFunds() {
+const DepositFunds = () => {
   return (
-    <section className="deposit-funds">
+    <div className="deposit-funds">
       <h1>Deposit Funds</h1>
-      <div className="stats">
-        <p>SWAY in wallet: 120 000</p>
-      </div>
-      <h2>Resources in-game:</h2>
+      <p>SWAY in wallet: 120,000</p>
+      <p>Resources ingame:</p>
       <ul>
         <li>Turrets: 10</li>
         <li>Shield Batteries: 10</li>
@@ -15,9 +15,9 @@ function DepositFunds() {
         <li>Research Samples: 10</li>
         <li>Snacks: 10</li>
       </ul>
-      <button>Convert SWAY to Resources</button>
-    </section>
+      <button>Deposit</button>
+    </div>
   );
-}
+};
 
 export default DepositFunds;
